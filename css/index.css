@@ -1,7 +1,7 @@
 body {
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position-y: 20%;
     display: grid;
     grid-template-columns: 250px 3fr 1fr;
@@ -14,8 +14,6 @@ body {
     padding: 0px;
     width: 100%;
 }
-
-
 
 header {
     grid-area: he2;
@@ -32,10 +30,12 @@ aside {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
+    height: auto;
 }
 
 article {
     grid-area: ar;
+    padding: 20px;
     border-style: solid;
     border-color: black;
     background-color: #ffd900;
@@ -43,16 +43,41 @@ article {
     margin-right: 10px;
 }
 
+.animal-a article {
+    display: grid;
+    grid-template-areas: 
+    "di di di"
+    "di di di";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.div-item {
+    grid-area: di;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.img-div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align {
+    text-align: center;
+}
+
 footer {
     grid-area: fo;
     background-color: black;
-    position: absolute;
     margin-top: 10px;
     bottom: 0px;
     color: white;
-
-    width: 100%;
-    
+    padding: 10px;
 }
 
 .underline {
@@ -89,9 +114,25 @@ footer {
     height: 235px;
 }
 
+.article-text {
+    font-size: 20px;
+}
+
+.img {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+#corgi {
+    width: 40%;
+    margin: 20px;
+    margin-top: 0px;
+    float: right;
+}
+
 .navbar {
     width: 1fr;
-    /* height: ; */
     background-color: #ffd900;
     position: fixed;
     top: 0px;
@@ -160,21 +201,31 @@ footer {
     body {
         grid-template-areas:
         "he1 he2"
-        "ar ar"
         "as as"
+        "ar ar"
         "fo fo";
         grid-template-columns: 150px auto;
     }
 
+    aside {
+        margin-bottom: 20px;
+    }
+
     #logo {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     #AU {
         font-size: 40px;
         grid-column: 1 / 2;
         
+    }
+
+    .navbar {
+        width: 145px;
+        font-size: 12px;
+        padding-top: 120px;
     }
 
 }
