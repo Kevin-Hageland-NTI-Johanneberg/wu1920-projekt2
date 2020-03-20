@@ -121,7 +121,7 @@ footer {
 }
 
 .container {
-    grid-area: he1, as;
+    grid-area: he1 as;
 }
 
 .hamburger-menu {
@@ -158,7 +158,6 @@ footer {
 }
 
 .navbar {
-    width: 1fr;
     background-color: #ffd900;
     position: fixed;
     top: 0px;
@@ -180,7 +179,6 @@ footer {
 
 .nav-list {
     text-align: right;
-    /* margin top? */
 }
 
 .nav-item {
