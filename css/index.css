@@ -22,6 +22,14 @@ header {
     margin-top: 40px;
 }
 
+.remove-blue {
+    color: black;
+}
+
+.remove-underline{
+    text-decoration: none;
+}
+
 aside {
     grid-area: as;
     background-color: #ffd900;
@@ -83,6 +91,13 @@ article {
     margin: 10px;
     padding: 10px;
     background-color: #ffe553;
+    
+    transition: .3s;
+}
+
+.div-item:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
 }
 
 
@@ -118,10 +133,6 @@ footer {
 #AU {
     grid-area: he2;
     font-size: 75px;
-}
-
-.container {
-    grid-area: he1 as;
 }
 
 .hamburger-menu {
