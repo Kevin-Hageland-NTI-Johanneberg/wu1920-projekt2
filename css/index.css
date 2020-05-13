@@ -32,7 +32,7 @@ header {
 
 aside {
     grid-area: as;
-    background-color: #ffd900;
+    background-color: #FFE346;
     border-style: solid;
     border-color: black;
     margin-left: 10px;
@@ -46,7 +46,7 @@ article {
     padding: 20px;
     border-style: solid;
     border-color: black;
-    background-color: #ffd900;
+    background-color: #FFE346;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -90,7 +90,7 @@ article {
     border-width: 3px;
     margin: 10px;
     padding: 10px;
-    background-color: #ffe553;
+    background-color: rgb(255, 238, 139);
     
     transition: .3s;
 }
@@ -155,6 +155,11 @@ footer {
     font-size: 20px;
 }
 
+.picture-text {
+    font-size: 18px;
+    font-style: italic;
+}
+
 .img {
     border-style: solid;
     border-color: black;
@@ -162,14 +167,33 @@ footer {
 }
 
 #corgi {
-    width: 40%;
+    width: 300px;
+}
+
+#corgi2, #turtle, #pupper {
+    width: 30%;
     margin: 20px;
+    margin-right: 170px;
     margin-top: 0px;
     float: right;
 }
 
+#corgi-fig {
+    float: right;
+}
+
+#corgi-youtube {
+    float: right;
+    margin: 20px;
+}
+
+#corgi-video {
+    float: left;
+    margin: 20px;
+}
+
 .navbar {
-    background-color: #ffd900;
+    background-color: #FFE346;
     position: fixed;
     top: 0px;
     left: -500px;
@@ -274,7 +298,7 @@ footer {
     }
 
     .navbar {
-        width: 145px;
+        width: 200px;
         font-size: 12px;
         padding-top: 120px;
     }
@@ -286,5 +310,12 @@ footer {
         "di5 di6";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #corgi2, #turtle, #pupper {
+        width: 200px;
+        margin-left: 20px;
+        margin-right: auto;
+        float: right;
     }
 }
