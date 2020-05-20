@@ -95,7 +95,7 @@ article {
     transition: .3s;
 }
 
-.div-item:hover{
+.div-item:hover {
     transform: scale(1.1);
     transition-duration: .3s;
 }
@@ -280,13 +280,13 @@ footer {
     body {
         grid-template-areas:
         "he1 he2"
-        "as as"
         "ar ar"
+        "as as"
         "fo fo";
         grid-template-columns: 150px auto;
     }
 
-    aside {
+    article, aside {
         margin-bottom: 20px;
     }
 
