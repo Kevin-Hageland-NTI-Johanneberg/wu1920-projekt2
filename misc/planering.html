@@ -263,7 +263,32 @@
     <img class="padding_left" src="done5.jpg" alt="About us">
 
     <h2>6. Komplitering</h2>
-    <p class="padding_left"></p>
+    
+    <h3 class="padding_left">Corgi 2.0</h3>
+    <p class="padding_left">Jag har nu uppdaterat min corgi artikel till att bli mer komplex med flera underrubriker, bildtext där jag använt mig av "figure" men även lagt in videoklipp från youtube med hjälp av en "iframe" samt ett eget videoklipp med hjälp av "video".</p>
+    <img class="padding_left" src="corgi1.png" alt="Min övre del på min corgi-artikel.">
+    <img class="padding_left" src="corgi2.jpg" alt="Min undre del på min corgi-artikel.">
+
+    <h3 class="padding_left">Andra webläsare</h3>
+    <p class="padding_left">Tidigare har jag provat min hemsida på firefox där jag inte märkte någon större skillnad mer än att animationen skiljde sig lite när man hoverade över texten i hamburgarmeny. Jag har nu läst att det är på grund av att ":after" spannar annorlunda från hur google gör det. Däremot är jag inte helt säker på hur man löser mitt problem då andra med liknande problem har löst det på annorlunda sätt som inte applicerar på mitt problem. Det eftersom en till exempel hade använt sig av inline, och kunde därmed lösa det med inline-block vilket inte fungerar på mitt textelement. Om man anser det som ett problem och skulle vilja publicera hemsidan så är det antagligen ganska så lätt att lösa efter att man söker runt ett litet tag då jag vet att det beror på ":after" till min animation.</p>
+
+    <p class="padding_left">Jag har nu dessutom testat min hemsida i Microsoft Edge då det är Microsofts nyaste webläsare (Januari 2020) och är som fortfarande baserad på deras tidigare Internet Explorer till utseendet. Min kod har inte haft några problem med denna nya webläsare och verkar därmed anpassat sig mycket till modern teknik likt google då båda webläsare klarar av grid-areas och flexsystem, saker som jag sett internet explorer har haft dålig anpassning till vilket man ser på bild 2 här nedan. Den största skillnaden jag kan hitta är att Microsoft Edge använder en annan mediaplayer, vilket är någon som visserligen firefox också gjorde.</p>
+
+    <img class="padding_left" src="microsoft-edge.jpg" alt="Min hemsida på microsoft-edge">
+    <img class="padding_left" src="internet-explorer.png" alt="Min hemsida på internet explorer.">
+
+    <h3 class="padding_left">Ny contrast contrast-checker</h3>
+    <p class="padding_left">Eftersom jag nämnde att jag lätt kunde ändra kontrasten på bakgrunden jämtemot texten så gjorde jag det och här är de nya resultaten.</p>
+    <img class="padding_left" src="contrast-checker v2.png" alt="Nya contrastcheckern">
+    <img class="padding_left" src="contrast-checker v2 BW.png" alt="Nya contrastcheckern i svartvitt">
+
+    <h3 class="padding_left">Validering</h3>
+    <p class="padding_left">Eftersom jag nu har lagt till mer kod, mer specifikt inom corgi.html så krävs nu en ny validering av min html och css som vi ser nedan. Den första bilden är för min css, den andra för corgi.html och den tredje för övriga html-sidor.</p>
+    <img class="padding_left" src="css-validator v2.png" alt="Min perfekta css validering">
+    <img class="padding_left" src="corgi-validator.png" alt="Min validering på corgi.html">
+    <img class="padding_left" src="html-validator v2.png" alt="Min nya html validering">
+    <p class="padding_left">Här ser vi att min css validering är perfekt eftersom ingenting hittaded, dessutom gäller självklart samma "problem" när jag använder h1 istället för h2 och därmed h2 där jag bör använda h3 fortfarande i övriga html sidor vilket man löser genom att byta css'en för h1, h2 och h3, vilket däremot är ganska tidskrävande.I min nya corgi.html hittades dessutom att jag använt mig av "frameborder=0" vilket tar bort en liten border som annars lägs på iframen vilket beror på att det är html koden jag tog ifrån youtubes delningsfunktion som därmed innehöll både width, height och frameborder i html'en istället för att skriva det separat som en css, vilket man självklart bör göra för att kunna anpassa hemsidan med mediaquaries och generellt för att hålla all typ av css-kod på ett ställe för att kunna hantera hemsidan lättare. Därmed lade jag in width och height samt "border: 0;" i ID't som min "iframe" redan hade och tog bort det ur html'en. Samma problem hittade jag dessutom längre ner i html'en där jag använt width till min "video" och gjorde därmed samma lösning där. Den nya valideringen ser vi här nedan och kan därmed konstatera att jag löst problemet då det enda som kvarstår är felanvändandet av h1 som jag tidigare nämnt.</p>
+    <img class="padding_left" src="corgi-validator v2.png" alt="Min slutliga validering på corgi.html">
 
 </body>
 
